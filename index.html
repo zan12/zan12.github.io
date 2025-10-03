@@ -32,9 +32,36 @@
 </style>
   
   <meta content="Aonan Zhang" name="author">
-
+  <link rel="preload" href="./personal/aonan.png" as="image">
+  <style>
+    .profile-photo {
+      position: absolute;
+      top: 32px;
+      right: 48px;
+      width: 110px;
+      height: 110px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    @media (max-width: 900px) {
+      .profile-photo {
+        position: static;
+        display: block;
+        margin: 0 auto 16px auto;
+        float: none;
+        right: auto;
+        top: auto;
+      }
+    }
+  </style>
   
   <meta content="homepage of aonan zhang at columbia university" name="description"></head><body style="background-color: rgb(247, 247, 247); color: rgb(0, 0, 0);" alink="#000099" link="#000099" vlink="#990099">
+
+    <div style="position: relative; min-height: 30px;">
+      <img src="./personal/aonan.png" alt="Aonan Zhang" class="profile-photo" style="position: absolute; top: 600; right: 0;">
+    </div>
+
     
 <table style="text-align: left; width: 680px; background-color: rgb(247, 247, 247); height: 210px;" border="0" cellpadding="2" cellspacing="2">
 
@@ -42,22 +69,38 @@
     <tr>
       <td style="width: 100%; vertical-align: top; height: 50px;">
       <div style="margin-left: 0px;">
-      <h3 style="margin-top: 6px; height: 5px;">Aonan Zhang</h3>
-      
+      <h3 style="margin-top: 6px; height: 5px;">Aonan Zhang 
+        <a href="./personal/aonan_cv.pdf" target="_blank" style="vertical-align: top; margin-left: 4px; text-decoration: none;">
+          <img src="./personal/CV.svg" alt="CV" style="height: 28px; vertical-align: top;">
+        </a>
+        <a href="mailto:szyagn@gmail.com" target="_blank" style="vertical-align: top; margin-left: 4px; text-decoration: none;">
+          <img src="./personal/email.png" alt="Email" style="height: 28px; vertical-align: top;">
+        </a>
+        <a href="https://scholar.google.com/citations?hl=zh-CN&user=Daa3WpMAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" style="vertical-align: top; margin-left: 4px; text-decoration: none;">
+          <img src="./personal/google_scholar.svg" alt="Google Scholar" style="height: 28px; vertical-align: top;">
+        </a>
+        <a href="https://www.linkedin.com/in/aonan-zhang-4208bb67" target="_blank" style="vertical-align: top; margin-left: 4px; text-decoration: none;">
+          <img src="./personal/linkedin.png" alt="LinkedIn" style="height: 28px; vertical-align: top;">
+        </a>
+        <a href="https://x.com/Aonan12" target="_blank" style="vertical-align: top; margin-left: 4px; text-decoration: none;">
+          <img src="./personal/x.jpeg" alt="X" style="height: 28px; vertical-align: top;">
+        </a>
+      </h3>
       
       <br>Research Scientist - Apple Foundation Model Team<br>
-Email: aonan_zhang@[company_name].com<br>
       </div>
       </td>
     </tr>
     <tr>
       <td style="vertical-align: top; height: 65px;">
 
-I build foundation models at Apple, focusing on model architectures and data generation.<br><br>
+I build foundation models at Apple.<br>
+My research focuses on <a href="https://arxiv.org/pdf/2403.09919" target="_blank">model efficiency</a> and <a href="https://arxiv.org/pdf/2403.09919" target="_blank">data generation</a>.<br><br>
 
-Before Apple, I was a research scientist at ByteDance.<br>
-I got my Ph.D from Columbia University, working with Prof. John Paisley.<br>
-I finished my BS and MS at Tsinghua University, working with Prof. Jun Zhu.<br><br>
+Previously at ByteDance, I worked on <a href="https://arxiv.org/pdf/2110.13048" target="_blank">trillion-scale data subsampling</a>.<br>
+At Google, I designed a <a href="https://arxiv.org/pdf/1810.04719">sequence model for speaker diarization</a> during my internship.<br>
+I got my Ph.D from Columbia University, working with Prof. <a href="https://www.columbia.edu/~jwp2128/" target="_blank">John Paisley</a>.<br>
+I finished my BS and MS at Tsinghua University, working with Prof. <a href="https://ml.cs.tsinghua.edu.cn/~jun/index.shtml">Jun Zhu</a>.<br><br>
       </td>
     </tr>
   </tbody>
@@ -69,7 +112,7 @@ I finished my BS and MS at Tsinghua University, working with Prof. Jun Zhu.<br><
 
 <span style="font-weight: bold;">[2025.9] Synthetic Bootstrapped Pretraining
 </span>[<a href="https://www.arxiv.org/pdf/2509.15248">Arxiv</a>]<br>
-Authors: Z. Yang*, <b>A. Zhang*</b>, H. Liu, T. Hashimoto, E. Candès, C. Wang, R. Pang
+Zitong Yang*, <b>Aonan Zhang*</b>, Hong Liu, Tatsu Hashimoto, Emmanuel Candès, Chong Wang, Ruoming Pang
 <br>
 <span style="font-style: italic; color: #666; display: inline-block; margin-top: 4px;">
 We generate synthetic data for pre-training by building a doc-to-doc mapping from scratch, without relying on a teacher model. This approach improves data efficiency on the scale of training a 3B model on 1T tokens.
@@ -79,9 +122,10 @@ We generate synthetic data for pre-training by building a doc-to-doc mapping fro
 
 <span style="font-weight: bold;">[2025.7] Apple Intelligence Foundation Language Models: Tech Report 2025
 </span>[<a href="https://arxiv.org/pdf/2507.13575">Arxiv</a>][<a href="https://machinelearning.apple.com/research/apple-foundation-models-2025-updates">Official Blog Post</a>]<br>
+Apple Foundation Model Team
+<br>
 <span style="font-style: italic; color: #666; display: inline-block; margin-top: 4px;">
-Checkout lastest updates on Apple's on-device and server side foundation language models.
-
+I worked on math reasoning for Apple's latest on-device and server-side foundation language models.
 </span>
 <br><br>
 
@@ -89,7 +133,7 @@ Checkout lastest updates on Apple's on-device and server side foundation languag
 <span style="font-weight: bold;">[2024.12] Recurrent Drafter for Fast Speculative
 Decoding in Large Language Models
 </span>[<a href="https://arxiv.org/pdf/2403.09919">Arxiv</a>][<a href="https://github.com/apple/ml-recurrent-drafter">Pytorch Code</a>][<a href="https://github.com/NVIDIA/TensorRT-LLM/blob/main/examples/redrafter/README.md">TensorRT LLM</a>]<br>
-Authors: Y. Cheng, <b>A. Zhang</b>, X. Zhang, C. Wang, Y. Wang
+Yunfei Cheng, <b>Aonan Zhang</b>, Xuanyu Zhang, Chong Wang, Yi Wang
 <br>
 <span style="font-style: italic; color: #666; display: inline-block; margin-top: 4px;">
 A simple and efficient speculative decoding algorithm that delivers significantly faster inference for large language models. The algorithm is readily deployable across multiple hardware platforms.
@@ -99,7 +143,7 @@ A simple and efficient speculative decoding algorithm that delivers significantl
 
 <span style="font-weight: bold;">[2024.7] Apple Intelligence Foundation Language Models
 </span>[<a href="https://arxiv.org/pdf/2407.21075">Arxiv</a>][<a href="https://machinelearning.apple.com/research/introducing-apple-foundation-models">Official Blog Post</a>]<br>
-Authors: T. Gunter, Z. Wang, C. Wang, R. Pang, A. Narayanan, <b>A. Zhang</b>, et al.
+Tom Gunter, Zirui Wang, Chong Wang, Ruoming Pang, Andy Narayanan, <b>Aonan Zhang</b>, et al.
 <span style="font-style: italic; color: #666; display: inline-block; margin-top: 4px;">
 I'm a core contributor to Apple's on-device foundation language models and scalable server models operating within Apple's Private Cloud Compute platform.
 </span>
@@ -107,8 +151,8 @@ I'm a core contributor to Apple's on-device foundation language models and scala
 
 
 <span style="font-weight: bold;">[2024.4] MM1: Methods, Analysis & Insights from Multimodal LLM Pre-training
-</span>[<a href="https://arxiv.org/pdf/2407.21075">Arxiv</a>][<a href="https://machinelearning.apple.com/research/introducing-apple-foundation-models">Official Blog Post</a>]<br>
-Authors: B. McKinzie, Z. Gan, et al.
+</span>[<a href="https://arxiv.org/pdf/2403.09611">Arxiv</a>]<br>
+Brandon McKinzie, Zhe Gan, et al.
 <span style="font-style: italic; color: #666; display: inline-block; margin-top: 4px;">
  A family of multimodal models up to 30B parameters, that are SOTA in pre-training metrics and achieve competitive performance after supervised fine-tuning on a range of established multimodal benchmarks. I'm a contributor of the text backbone model.
 </span>
@@ -117,7 +161,7 @@ Authors: B. McKinzie, Z. Gan, et al.
 
 <span style="font-weight: bold;">[2021.10] Nonuniform Negative Sampling and Log Odds Correction with Rare Events Data
 </span>[<a href="https://arxiv.org/pdf/2110.13048">Arxiv</a>]<br>
-Authors: H. Wang, <b>A. Zhang</b>, C. Wang.
+H. Wang, <b>A. Zhang</b>, C. Wang.
 <span style="font-style: italic; color: #666; display: inline-block; margin-top: 4px;">
 We designed a theoretically efficient data subsampling algorithm for negative-dominant datasets, and applied it to a click-through rate dataset containing over 0.3 trillion instances.
 </span>
@@ -125,9 +169,9 @@ We designed a theoretically efficient data subsampling algorithm for negative-do
 
 
 <span style="font-weight: bold;">[2019.2] Fully Supervised Speaker Diarization<br>
-</span>[<a href="https://arxiv.org/abs/1810.04719">Arxiv</a>][<a href="https://github.com/google/uis-rnn">Github</a>][<a href="https://www.youtube.com/watch?v=pGkqwRPzx9U">Video</a>][<a href="https://ai.googleblog.com/2018/11/accurate-online-speaker-diarization.html">Official Google AI Blog</a>]
+</span>[<a href="https://arxiv.org/pdf/1810.04719">Arxiv</a>][<a href="https://github.com/google/uis-rnn">Github</a>][<a href="https://www.youtube.com/watch?v=pGkqwRPzx9U">Video</a>][<a href="https://ai.googleblog.com/2018/11/accurate-online-speaker-diarization.html">Official Google AI Blog</a>]
 <br>
-Authors: <b>A. Zhang</b>, Q. Wang, Z. Zhu, J. Paisley, C. Wang
+<b>A. Zhang</b>, Q. Wang, Z. Zhu, J. Paisley, C. Wang
 <span style="font-style: italic; color: #666; display: inline-block; margin-top: 4px;">
 We introduce Unbounded Interleaved-State Recurrent Neural Networks (UIS-RNN), in which each speaker is modeled by a parameter-sharing RNN. This framework detects speaker changes on the fly, through anomalies in the RNN state transitions.
 </span>
@@ -226,6 +270,6 @@ F. Xia, N. Chen, J. Zhu, <b>A. Zhang</b>, X. Jin:
 
 
 <hr style="width: 100%; height: 2px; background-color: rgb(247, 247, 247);">
-<pre style="background-color: rgb(247, 247, 247);">Last update: Oct 2nd, 2025</pre>
+<pre style="background-color: rgb(247, 247, 247);">Last update: Oct 3rd, 2025</pre>
 
 </body></html>
